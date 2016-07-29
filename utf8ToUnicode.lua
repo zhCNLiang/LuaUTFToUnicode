@@ -84,7 +84,7 @@ function CommonUtils.enc_utf8_to_unicode_one(character)
     local b1, b2, b3, b4, b5, b6
     local c1, c2, c3, c4, c5, c6
     if utfbytes == 1 then
-        b1 = character
+        unicode = c
     elseif utfbytes == 2 then
         b1 = string.byte(character, 1)
         b2 = string.byte(character, 2)
